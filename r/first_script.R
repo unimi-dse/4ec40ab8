@@ -1,4 +1,4 @@
-#rvest package
+#Loading the rvest package
 library('rvest')
 
 #Specifying the url for desired website to be scraped
@@ -39,9 +39,6 @@ description_data <- html_text(description_data_html)
 
 #Let's have a look at the description data
 head(description_data)
-
-#Data-Preprocessing: removing '\n'
-description_data<-gsub("\n","",description_data)
 
 #Let's have another look at the description data 
 head(description_data)
@@ -201,7 +198,7 @@ gross_data<-substring(gross_data,2,6)
 length(gross_data)
 
 #Filling missing entries with NA
-for (i in c(20,60,61,74,80,84,87,97)){
+for (i in c(20,25,60,61,74,80,84,87,97)){
   
   a<-gross_data[1:(i-1)]
   
@@ -233,6 +230,7 @@ movies_df<-data.frame(Rank = rank_data, Title = title_data,
                       Director = directors_data, Actor = actors_data)
 
 
+
 str(movies_df)
 
 
@@ -250,9 +248,9 @@ mypplot <- function(){
 }
 
 myggplot <- function(){
-
-k<- ggplot(movies_df,aes(x=Runtime,y=Rating))+
-  geom_point(aes(size=Votes,col=Genre))
+  
+  k<- ggplot(movies_df,aes(x=Runtime,y=Rating))+
+    geom_point(aes(size=Votes,col=Genre))
   
   return(k)
 }
@@ -260,7 +258,7 @@ k<- ggplot(movies_df,aes(x=Runtime,y=Rating))+
 mygplot <- function(){
   
   s<-ggplot(movies_df,aes(x=Runtime,y=Gross_Earning_in_Mil))+
-  geom_point(aes(size=Rating,col=Genre))
+    geom_point(aes(size=Rating,col=Genre))
   
   
   return(s)
