@@ -133,12 +133,3 @@ movie_table <- data.frame(Rank = rank_data,Title = title_data,
                         Actor = actors_data)
 str( movie_table)
 
-
-qplot(data = movie_table,Runtime,fill = Genre,bins = 30)
-
-ggplot(movie_table,aes(x=Runtime,y=Rating))+
-  geom_point(aes(size=Votes,col=Genre))
-
-ggplot(movie_table,aes(x=Runtime,y=Gross_Earning))+
-  geom_point(aes(size=Rating,col=Genre))
-

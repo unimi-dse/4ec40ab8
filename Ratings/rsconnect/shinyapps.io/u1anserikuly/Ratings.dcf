@@ -5,8 +5,8 @@ account: u1anserikuly
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 1818561
-bundleId: 2804333
+bundleId: 2804576
 url: https://u1anserikuly.shinyapps.io/Ratings/
-when: 1581860883.79553
+when: 1581874151.67263
 asMultiple: FALSE
 asStatic: FALSE
