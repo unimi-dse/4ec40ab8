@@ -14,6 +14,6 @@ IMDb "Top 50 movies"
 <h2>Usage</h2>
 ?library(Top50)
 ---------------------
-###Shiny App
+Shiny App
 The function runapp() runs a Graphical User Interface to present the data slected by the user.
 runapp()
