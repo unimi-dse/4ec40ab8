@@ -1,4 +1,4 @@
-#' Run App
+#' Run App Top50
 #'
 #' Runs a Graphical User Interface and load shiny app.
 #'

@@ -1,6 +1,5 @@
-library(shiny)
-library(ggplot2)
-library(rvest)
+#Loading the rvest package
+library('rvest')
 
 # to scape data from, in this IMDB
 url <- "https://www.imdb.com/search/title/?groups=top_250&sort=user_rating,desc"
@@ -135,8 +134,5 @@ str( movie_table)
 
 write.csv(movie_table,'movie_table.csv', row.names = FALSE )
 
-mydata <- function() {
- print(movie_table)
-}
 
 

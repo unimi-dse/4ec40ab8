@@ -6,10 +6,6 @@
 #
 #    http://shiny.rstudio.com/
 #
-
-library(shiny)
-library(ggplot2)
-
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(
 
@@ -26,10 +22,10 @@ shinyUI(fluidPage(
 
 
    navlistPanel(
-       tabPanel("Table", DT::dataTableOutput("table")),
-       tabPanel("Plot",  plotOutput(outputId = "Plot1")),
-       tabPanel("Plot2",  plotOutput(outputId = "Plot2")),
-       tabPanel("Plot3",  plotOutput(outputId = "Plot3"))
+       tabPanel("Table", DT::dataTableOutput("table"),align = "center"),
+       tabPanel("Plot",  plotOutput(outputId = "Plot1"),align = "center"),
+       tabPanel("Plot2",  plotOutput(outputId = "Plot2"),align = "center"),
+       tabPanel("Plot3",  plotOutput(outputId = "Plot3"),align = "center")
 
    )
 

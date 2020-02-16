@@ -6,11 +6,8 @@
 #
 #    http://shiny.rstudio.com/
 #
-
-library(shiny)
-library(ggplot2)
-
 shinyServer(function(input, output) {
+
 
     output$table <- DT::renderDataTable(DT::datatable({
         data <- movie_table
