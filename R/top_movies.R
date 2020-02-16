@@ -1,10 +1,7 @@
 library(shiny)
 library(tidyverse)
 library(rvest)
-library(knitr)
-library(kableExtra)
-library(highcharter)
-library(viridisLite)
+library(ggplot2)
 
 # First establish the URL we want to scape data from, in this IMDB
 url <- "https://www.imdb.com/search/title/?groups=top_250&sort=user_rating,desc"
