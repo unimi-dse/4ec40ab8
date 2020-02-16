@@ -2,7 +2,7 @@ library(shiny)
 library(ggplot2)
 library(rvest)
 
-# First establish the URL we want to scape data from, in this IMDB
+# to scape data from, in this IMDB
 url <- "https://www.imdb.com/search/title/?groups=top_250&sort=user_rating,desc"
 webpage <- read_html(url)
 
@@ -133,10 +133,10 @@ movie_table <- data.frame(Rank = rank_data,Title = title_data,
                         Actor = actors_data)
 str( movie_table)
 
-write.csv(movie_table,'movie_table.csv' )
+write.csv(movie_table,'movie_table.csv', row.names = FALSE )
 
 mydata <- function() {
-  print(movie_table)
+ print(movie_table)
 }
 
 
