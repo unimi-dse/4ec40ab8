@@ -133,3 +133,10 @@ movie_table <- data.frame(Rank = rank_data,Title = title_data,
                         Actor = actors_data)
 str( movie_table)
 
+write.csv(movie_table,'movie_table.csv' )
+
+mydata <- function() {
+  print(movie_table)
+}
+
+

@@ -17,9 +17,6 @@ shinyServer(function(input, output) {
         if (input$Genre != "All") {
             data <- data[data$Genre == input$Genre,]
         }
-        else if (input$Genre!= "All") {
-            data <- data[data$Genre == input$Genre,]
-        }
         data
 
     }) )
