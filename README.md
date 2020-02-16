@@ -1,4 +1,4 @@
-IMDb "Top 50" 
+IMDb "Top 50 movies" 
 ====================
 
 
@@ -9,5 +9,5 @@ IMDb "Top 50"
 
 
 ### Installation
-> first install the R package "devtools" if not installed:  #devtools::install_github('unimi-dse/adca2d89')
+> first install the R package "devtools" if not installed:  #devtools::install_github('unimi-dse/4ec40ab8')
 

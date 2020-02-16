@@ -1,0 +1,12 @@
+name: ShinyTest
+title: ShinyTest
+username:
+account: u1anserikuly
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1818552
+bundleId: 2804465
+url: https://u1anserikuly.shinyapps.io/shinyTest/
+when: 1581868301.70183
+asMultiple: FALSE
+asStatic: FALSE
